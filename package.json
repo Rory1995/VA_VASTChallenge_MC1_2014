@@ -12,7 +12,11 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
     "d3": "^7.1.1",
+    "moment": "^2.29.1",
+    "simple-timeline": "^2.0.1",
     "svg": "^0.1.0",
+    "vis-data": "^7.1.2",
+    "vis-timeline": "^7.5.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
