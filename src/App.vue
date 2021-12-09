@@ -17,15 +17,18 @@
       </div>
     </nav>
     <timeline> </timeline>
+    <network> </network>
   </div>
 </template>
 <script type="text/javascript">
 import timeline from "@/components/timeline.vue";
+import network from "@/components/network.vue";
 
 
 export default {
   name: 'App',
-  components: {timeline},
+  components: {timeline,
+               network},
 }
 
 
