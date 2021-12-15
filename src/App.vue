@@ -17,17 +17,20 @@
       </div>
     </nav>
     <timeline> </timeline>
+    <organization_chart> </organization_chart>
     <network> </network>
   </div>
 </template>
 <script type="text/javascript">
 import timeline from "@/components/timeline.vue";
+import organization_chart from "@/components/organization_chart.vue";
 import network from "@/components/network.vue";
 
 
 export default {
   name: 'App',
   components: {timeline,
+               organization_chart,
                network},
 }
 

@@ -1,8 +1,15 @@
 <template>
   <div id="timeline">
-    <row>
-      <h4>Eventi dei giorni 20 e 21 Gennaio 2014</h4>
-    </row>
+    <div class="timeline">
+      <br>
+      <row>
+        <h1>Eventi dei giorni 20 e 21 Gennaio 2014</h1>
+      </row>
+      <div class="text">
+        <span>Durante la riunione annuale della GAStech tenuta nella giornata del 20 gennaio 2014 è scattato un allerme e le persone che erano all'interno dell'edificio sono state costretta ad essere evuacuate. Al termine dell'emergenza alcuni dipendenti non sono ricomparsi. Potete esplorare gli eventi di quel giorno grazie alla timeline sottostante. E' possibile leggere maggiori dettagli passando con il cursore sopra i diversi eventi.</span>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -179,7 +186,7 @@ export default {
       start: new Date(2014, 1, 20, 7, 30),
       end: new Date(2014, 1, 20, 23, 59),
       width: '100%',
-      //height: '40%',
+      height: '450px',
       margin: {
         item: 3
       },
@@ -197,6 +204,12 @@ export default {
 </script>
 
 <style>
+div.timeline{
+  text-align: center;
+}
+div.text{
+  text-align: start;
+}
 .vis-item {
   border-color: #22226e;
   background-color: #5dc275;
