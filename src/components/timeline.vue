@@ -6,7 +6,7 @@
         <h1>Eventi dei giorni 20 e 21 Gennaio 2014</h1>
       </row>
       <div class="text">
-        <span>Durante la riunione annuale della GAStech tenuta nella giornata del 20 gennaio 2014 è scattato un allerme e le persone che erano all'interno dell'edificio sono state costretta ad essere evuacuate. Al termine dell'emergenza alcuni dipendenti non sono ricomparsi. Potete esplorare gli eventi di quel giorno grazie alla timeline sottostante. E' possibile leggere maggiori dettagli passando con il cursore sopra i diversi eventi.</span>
+        <span>Durante la riunione annuale della GAStech tenuta nella giornata del 20 gennaio 2014 è scattato un allerme e le persone che erano all'interno dell'edificio sono state essere evuacuate. Al termine dell'emergenza alcuni dipendenti non sono ricomparsi. Potete esplorare gli eventi di quel giorno grazie alla timeline sottostante. E' possibile leggere maggiori dettagli passando con il cursore sopra i diversi eventi.</span>
       </div>
     </div>
 

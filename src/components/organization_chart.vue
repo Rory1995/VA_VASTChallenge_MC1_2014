@@ -22,7 +22,7 @@
       <b-col>
         <vue-tree
         style=" height: 480%; border: 1px solid rgba(39,39,128,0); background: rgba(57,60,66,0.88)"
-        :dataset=organization1997
+        :dataset=organization[selected]
         :config="treeConfig"
         :linkStyle="'straight'"
     >
@@ -65,8 +65,8 @@ export default {
         { text: '2001', value: '2001' },
         { text: '2009', value: '2009' }
       ],
-      organization:{      },
-      organization1997: {
+      organization:{
+      "1997": {
         name: 'Henk Bodrogi,',
         value: 'Leader',
         avatar: "https://www.corsinvest.it/wp-content/uploads/2019/10/github-logo.png",
@@ -116,7 +116,7 @@ export default {
         },
         ]
       },
-      organization2001: {
+      "2001": {
         name: 'Elian Karel,',
         value: 'Leader',
         avatar:"https://www.corsinvest.it/wp-content/uploads/2019/10/github-logo.png",
@@ -198,7 +198,7 @@ export default {
         },
         ]
       },
-      organization2009: {
+      "2009": {
         name: 'Silvia Marek,',
         value: 'Leader',
         avatar:"https://www.corsinvest.it/wp-content/uploads/2019/10/github-logo.png",
@@ -293,6 +293,7 @@ export default {
             ]
           },
         ]
+      },
       },
       treeConfig: { nodeWidth: 120, nodeHeight: 80, levelHeight: 170 }
     };
