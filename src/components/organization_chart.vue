@@ -5,7 +5,7 @@
       <h1 >Protectors of Kronos </h1>
     </div>
     <h3>POK organization chart </h3>
-    <b-form-group variant="outline-success" label="Osserva come è cambiato l'roganizzazione della POK selezionando l'anno ed esplorando l'organigramma" v-slot="{ ariaDescribedby }">
+    <b-form-group variant="outline-success" label="Osserva come è cambiata l'organizzazione della POK selezionando l'anno di interesse ed esplorando l'organigramma" v-slot="{ ariaDescribedby }">
       <h5>POK {{selected}}</h5>
       <b-form-radio-group
           id="btn-radios-1"
