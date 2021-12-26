@@ -6,12 +6,13 @@
     </div>
     <h3>POK organization chart </h3>
     <b-form-group variant="outline-success" label="Osserva come è cambiato l'roganizzazione della POK selezionando l'anno ed esplorando l'organigramma" v-slot="{ ariaDescribedby }">
+      <h5>POK {{selected}}</h5>
       <b-form-radio-group
           id="btn-radios-1"
           v-model="selected"
           :options="options"
           :aria-describedby="ariaDescribedby"
-          name="radios-btn-default"
+          name="year_button"
           buttons
       ></b-form-radio-group>
     </b-form-group>
@@ -21,7 +22,7 @@
       <b-col>
         <vue-tree
         style=" height: 480%; border: 1px solid rgba(39,39,128,0); background: rgba(57,60,66,0.88)"
-        :dataset="organization2009"
+        :dataset=organization1997
         :config="treeConfig"
         :linkStyle="'straight'"
     >
@@ -52,6 +53,7 @@ import VueTree from "@ssthouse/vue-tree-chart";
 import Vue from "vue";
 Vue.component("vue-tree", VueTree);
 
+
 export default {
   name: "organization_chart",
   data() {
@@ -59,10 +61,11 @@ export default {
 
       selected: '1997',
       options: [
-        { text: '1997', value: 'radio1' },
-        { text: '2001', value: 'radio2' },
-        { text: '2009', value: 'radio4' }
+        { text: '1997', value: '1997' },
+        { text: '2001', value: '2001' },
+        { text: '2009', value: '2009' }
       ],
+      organization:{      },
       organization1997: {
         name: 'Henk Bodrogi,',
         value: 'Leader',
@@ -232,12 +235,7 @@ export default {
 
               }]
           },
-          {
-            name: "Silvia Marek,",
-            value: 'Membro',
-            avatar:
-                "https://www.corsinvest.it/wp-content/uploads/2019/10/github-logo.png",
-          },
+
           {name: "Fondatori",
             value: "",
             avatar:
@@ -298,8 +296,10 @@ export default {
       },
       treeConfig: { nodeWidth: 120, nodeHeight: 80, levelHeight: 170 }
     };
-  }
+  },
+
 };
+
 </script>
 
 <style scoped>

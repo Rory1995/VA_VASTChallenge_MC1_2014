@@ -178,7 +178,13 @@ export default {
       },
       {id: 26, title: "POK consegna il messaggio", start: new Date(2014, 1, 21, 11), type: 'point'},
       {id: 27, content: "POK chiede un riscatto di 20 milioni di dollari", start: new Date(2014, 1, 21, 12)},
-
+      {
+        id: 28,
+        content: "Fine notizie",
+        start: new Date(2014, 1, 21, 12),
+        end: new Date(2014, 1, 21, 13),
+        type: "background"
+      },
     ]);
 
     // Configuration for the Timeline
