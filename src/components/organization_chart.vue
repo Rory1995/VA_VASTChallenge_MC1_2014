@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <b-container>
+  <div>
     <div class="header">
       <br>
       <h1 >Protectors of Kronos </h1>
@@ -20,8 +21,10 @@
 
     <b-row>
       <b-col>
+        <div class="org" style="height: 500%">
+
         <vue-tree
-        style=" height: 480%; border: 1px solid rgba(39,39,128,0); background: rgba(57,60,66,0.88)"
+        style=" height: 480%; border: 1px solid rgba(0,0,0,0); background: rgb(241,245,243)"
         :dataset=organization[selected]
         :config="treeConfig"
         :linkStyle="'straight'"
@@ -35,7 +38,7 @@
         >
           <img
               :src="node.avatar"
-              style="width: 30px; height: 30px; border-raduis: 10px;"
+              style="width: 30px; height: 30px;"
           />
           <span style="padding: 3px 0; font-weight: bold;"
           ><i>{{ node.name }}</i>
@@ -43,9 +46,12 @@
         </div>
       </template>
     </vue-tree>
+        </div>
       </b-col>
     </b-row>
+
   </div>
+  </b-container>
 </template>
 
 <script>
@@ -309,8 +315,8 @@ div.header{
   text-align: center;
 }
 
-.container {
-  display: flex;
+.org {
+  display: flex ;
   flex-direction: column;
   align-items: revert;
 }
@@ -324,7 +330,7 @@ div.header{
 .box>*:first-child {
   align-self: stretch;
 }
-.box .selected {
+.box.selected {
   align-self: center;
 }
 
@@ -335,7 +341,7 @@ div.header{
   flex-direction: row;
   align-items: self-start ;
   justify-content: center;
-  color: #313131;
+  color: #ffffff;
   background-color: #5dc275;
   border-radius: 4px;
 
