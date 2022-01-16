@@ -6,7 +6,12 @@
             <h2 >Plots </h2>
           </div>
 
-          <h6>Ci sono due possibili spiegazioni su ciò che è accaduto, la prima è quello che</h6>
+          <p>Ci sono due possibili ipotesi per spiegare la scomparsa dei 10 dipendenti della GAStech.</p>
+          <p> La prima congettura è che i membri della POK abbiano effettivamente rapito i dipendenti  infiltrandosi durante la riunione della
+            GAStech spacciandosi per ristoratori, per vendicare la morte della piccola Juliana Vann, oppure semplicemente per
+            necessità di maggiori fondi.</p>
+          <p>Un'altra possibile ipotesi riguarda la fuga del gruppo esucitivo della GAStech con parte dei profitti. Questa ipotesi viene
+             supportata da alcune e-mail scambiate tra i dipendenti sui luoghi di vacanza e sull'innaffiamento delle piante per il mese successivo. </p>
 <b-table-simple>
   <b-tr>
     <b-th>
@@ -172,8 +177,6 @@ export default {
         jobType: row.CurrentEmploymentType,
         membership: row.Membership,
         kidnapped: row.Kidnapped,
-        cssClass: row.CssClass,
-        labelClass: row.LabelClass,
         targetNodes: row.TargetNodes,
 
       };
@@ -183,8 +186,6 @@ export default {
       const parsedRow = {
         id: row.id,
         name: row.name,
-        _cssClass: row.cssClass,
-        _labelClass: row.labelClass,
       };
       return parsedRow;
     },

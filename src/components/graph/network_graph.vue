@@ -20,7 +20,7 @@
         <b-th variant="dark">
           <div >
             <label >Scegli la forza:    </label>
-            <b-form-input id="range" v-model="force" type="range" min="500" max="5000"></b-form-input>
+            <b-form-input id="range" v-model="force" type="range" min="300" max="3000"></b-form-input>
             <div class="mt-2">Forza: {{ force }}</div>
           </div>
         </b-th>
@@ -32,6 +32,7 @@
             :net-nodes="nodes"
             :net-links="links"
             :options="options"
+
 
 
         ></d3-network>
@@ -54,11 +55,11 @@ export default {
   },
   data() {
     return {
-          status: 'Visibili',
+      status: 'Visibili',
       nodes: [],
       links: [],
       nodeSize:20,
-      force: 1000,
+      force: 500,
       nodeLabels: true,
       linkWidth: 1,
     };

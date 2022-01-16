@@ -19,6 +19,7 @@
       </nav>
 
       <b-tr>
+        <p></p>
         <timeline> </timeline>
       </b-tr>
       <b-tr>

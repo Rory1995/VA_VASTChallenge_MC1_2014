@@ -1,10 +1,41 @@
 <template>
+
   <b-container>
+
   <div>
+
     <div class="header">
-      <br>
-      <h1 >Protectors of Kronos </h1>
+      <b-row>
+        <b-col>
+          <br>
+          <h1 >Protectors of Kronos </h1>
+        </b-col>
+        <b-col>
+         <img src="../../public/static/j_vann.jpg" >
+        </b-col>
+      </b-row>
     </div>
+
+      <b-row>
+          <p>Come abbiamo visto, una delle possibili spiegazioni della scomparsa dei dipendenti della GAStech
+            è il rapimento da parte della POK. Ma come si è formato questo gruppo? Com'è acambiato negli anni? </p>
+          <p>Il gruppo è stato formato nel 1997 a Elodis, perché negli ultimi 18 mesi era stato notato un incremento di malattie come cancro,
+            malattie neurologiche, difetti di nascita e malattie respiratorie, associate ad calo della produzione agricola.
+            La fonte specifica della contaminazione non era chiara, ma diverse persone credevano che fosse il risultato
+            delle operazioni di trivellazione del gas a diversi chilometri da parte della GAStech.</p>
+
+
+      </b-row>
+          <p>Quando divenne chiaro che il Consiglio non poteva concordare una linea d'azione, i cittadini decisero
+            di affrontare il problema in modo indipendente. Volevano portare il loro messaggio al governo e al resto dei cittadini,
+            per riuscire a portare portare acqua pulita a Elodis e ripulire la contaminazione del fiume.</p>
+          <p>Il momento più critico è quando, il 18 agosto 1998, Juliana Vann, dieci anni, muore di
+            leucemia associata alla tossicità del benzene. Nipote di Mandor Vann e sorella di Isia Vann dipendente GAStech e membro attivo della POk.
+          </p>
+
+
+
+
     <h3>POK organization chart </h3>
     <b-form-group variant="outline-success" label="Osserva come è cambiata l'organizzazione della POK selezionando l'anno di interesse ed esplorando l'organigramma" v-slot="{ ariaDescribedby }">
       <h5>POK {{selected}}</h5>
@@ -311,6 +342,10 @@ export default {
 
 <style scoped>
 
+img {
+  width: 100px;
+}
+
 div.header{
   text-align: center;
 }
@@ -321,17 +356,8 @@ div.header{
   align-items: revert;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 200px;
-}
 .box>*:first-child {
   align-self: stretch;
-}
-.box.selected {
-  align-self: center;
 }
 
 .rich-media-node {
